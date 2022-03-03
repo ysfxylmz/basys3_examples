@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Jan 20 15:56:32 2022
+# Process ID: 17144
+# Current directory: C:/Users/ysfyi/Desktop/pldlab_project/q_6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19956 C:\Users\ysfyi\Desktop\pldlab_project\q_6\q_6.xpr
+# Log file: C:/Users/ysfyi/Desktop/pldlab_project/q_6/vivado.log
+# Journal file: C:/Users/ysfyi/Desktop/pldlab_project/q_6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ysfyi/Desktop/pldlab_project/q_6/q_6.xpr
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/ysfyi/Desktop/pldlab_project/q_1/q_1.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/ysfyi/Desktop/pldlab_project/Basys3_Master.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/ysfyi/Desktop/pldlab_project/Basys3_Master.xdc
+add_files -fileset constrs_1 -norecurse C:/Users/ysfyi/Desktop/pldlab_project/q_1/Basys3_q1.xdc
+synth_design -rtl -name rtl_1
+refresh_design
+close_project
+open_project C:/Users/ysfyi/Desktop/pldlab_project/q_2/q_2.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close_project
+open_project C:/Users/ysfyi/Desktop/pldlab_project/q_3/q_3.xpr
+update_compile_order -fileset sources_1
